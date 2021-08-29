@@ -43,6 +43,7 @@ class Quiz2VC: UIViewController {
         view.endEditing(true)
         mTimeTextField.text = ""
         mStartTimeButton.isHidden = true
+        mTimeLabel.text = "\(self.currentTime)"
         
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] timer in
             

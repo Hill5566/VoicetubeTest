@@ -69,10 +69,48 @@
                     <view key="view" contentMode="scaleToFill" id="GxN-MY-pOR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-bx-caB">
+                                <rect key="frame" x="207" y="110" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2P-84-1hZ">
+                                <rect key="frame" x="20" y="431" width="318" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-jP-zaJ">
+                                <rect key="frame" x="358" y="430" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1hX-g8-Hzx"/>
+                                    <constraint firstAttribute="width" constant="36" id="8Zp-Oq-mVg"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startTimeClick:" destination="OGh-m7-IjX" eventType="touchUpInside" id="BlS-gC-qlK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dAd-Dm-oLZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U3e-jP-zaJ" firstAttribute="centerY" secondItem="W2P-84-1hZ" secondAttribute="centerY" id="2de-PL-Yjy"/>
+                            <constraint firstItem="bcr-bx-caB" firstAttribute="centerX" secondItem="GxN-MY-pOR" secondAttribute="centerX" id="E6b-2Z-zWH"/>
+                            <constraint firstItem="bcr-bx-caB" firstAttribute="top" secondItem="dAd-Dm-oLZ" secondAttribute="top" constant="22" id="Jut-0G-xPe"/>
+                            <constraint firstItem="W2P-84-1hZ" firstAttribute="centerY" secondItem="GxN-MY-pOR" secondAttribute="centerY" id="Kgu-Nu-e8J"/>
+                            <constraint firstItem="W2P-84-1hZ" firstAttribute="leading" secondItem="dAd-Dm-oLZ" secondAttribute="leading" constant="20" id="T8n-be-pS9"/>
+                            <constraint firstItem="dAd-Dm-oLZ" firstAttribute="trailing" secondItem="U3e-jP-zaJ" secondAttribute="trailing" constant="20" id="go0-dw-Lnx"/>
+                            <constraint firstItem="U3e-jP-zaJ" firstAttribute="leading" secondItem="W2P-84-1hZ" secondAttribute="trailing" constant="20" id="ykr-Bd-9we"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="daW-xH-tLm"/>
+                    <connections>
+                        <outlet property="mStartTimeButton" destination="U3e-jP-zaJ" id="Qzd-lw-E6k"/>
+                        <outlet property="mTimeLabel" destination="bcr-bx-caB" id="Af8-G3-LbR"/>
+                        <outlet property="mTimeTextField" destination="W2P-84-1hZ" id="LsV-wl-YgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjZ-lp-XSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

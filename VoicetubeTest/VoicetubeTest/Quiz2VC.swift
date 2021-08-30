@@ -75,7 +75,7 @@ class Quiz2VC: UIViewController {
     
 
     override func viewWillDisappear(_ animated: Bool) {
-        viewWillDisappear(animated)
+        super.viewWillDisappear(animated)
         
         timer.invalidate()
     }

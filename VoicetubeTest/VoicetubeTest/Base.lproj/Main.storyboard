@@ -53,8 +53,20 @@
                     <view key="view" contentMode="scaleToFill" id="n2W-ox-n3d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="//用POSTMAN打API回error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-P0-DZI">
+                                <rect key="frame" x="104" y="437.5" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JOD-n2-kxR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3N6-P0-DZI" firstAttribute="centerY" secondItem="n2W-ox-n3d" secondAttribute="centerY" id="XOC-4B-1ng"/>
+                            <constraint firstItem="3N6-P0-DZI" firstAttribute="centerX" secondItem="n2W-ox-n3d" secondAttribute="centerX" id="YBP-SD-Tuy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lqo-5l-VlF"/>
                 </viewController>
